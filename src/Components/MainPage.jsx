@@ -9,6 +9,7 @@ const MainPage = () =>{
     const [next,setNext]=useState();
     const [prev,setPrev]=useState();
     const [pokeDex,setPokeDex]=useState();
+
     useEffect(()=>{
         axios.get(url)
         .then(res=>{

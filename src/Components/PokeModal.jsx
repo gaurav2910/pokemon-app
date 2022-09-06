@@ -6,7 +6,7 @@ const PokeModal = ({ data }) => {
         <>
         {
             (!data) ? "" : (
-                <>
+                <div className="card" style={{left:'40vw'}}>
                     <h1>{data.name}</h1>
                     <img src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/${data.id}.svg`} alt="" />
                     <div className="abilities">
@@ -33,7 +33,7 @@ const PokeModal = ({ data }) => {
                             })
                         }
                     </div>
-                </>
+                </div>
             )
         }
 
